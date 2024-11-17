@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background: #fdf8f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #f8bbd0;
+    color: white;
+    padding: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Slideshow Container */
+.slideshow {
+    position: relative;
+    max-width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Slides */
+.slideshow .slide {
+    display: none; /* Hide all slides by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Animation for Slide Transition */
+.fade {
+    animation: fadeEffect 1s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Message Styling */
+.message {
+    background-color: #ffebf1;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #5c2e74;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message p {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f8bbd0;
+    color: white;
+    font-size: 0.9rem;
+}
